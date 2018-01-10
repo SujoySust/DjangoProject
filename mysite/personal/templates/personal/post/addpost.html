@@ -1,0 +1,72 @@
+{% extends "personal/header.html" %}
+{% block content %}
+    <div class="container_12">
+{% include "personal/includes/head.html" %}
+{% include "personal/includes/navbar.html" %}
+{% include "personal/includes/sidebar.html" %}
+        <div class="grid_10">
+
+            <div class="box round first grid">
+                <h2>Enter Text Doucments</h2>
+                <div class="block">
+                 <form action="" method="" enctype="multipart/form-data">
+                    <table class="form">
+
+                        <tr>
+                            <td>
+                                <label>Title</label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Enter Post Title..." class="medium" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label>Category</label>
+                            </td>
+                            <td>
+                                <select id="select" name="select">
+                                    <option value="1">Category One</option>
+                                    <option value="2">Category Two</option>
+                                    <option value="3">Cateogry Three</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="vertical-align: top; padding-top: 9px;">
+                                <label>Content</label>
+                            </td>
+                            <td>
+                                <textarea class="tinymce" style="width: 500px; height:200px"></textarea>
+                            </td>
+                        </tr>
+						<tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" name="submit" Value="Result" />
+                            </td>
+                        </tr>
+                    </table>
+                    </form>
+                </div>
+            </div>
+                  <div class="box round first grid">
+                <h2> Text Summary Results </h2>
+                <div class="block">
+                    <p>The summary result will be showm here. The summary result will be showm here
+                        The summary result will be showm here  The summary result will be showm here
+                        The summary result will be showm here</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+             <div class="grid_10">
+
+
+        </div>
+    </div>
+{% include "personal/includes/footer.html" %}
+{% endblock %}
